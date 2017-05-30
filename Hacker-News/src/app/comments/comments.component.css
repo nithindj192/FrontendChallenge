@@ -1,0 +1,35 @@
+.normal { 
+	font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+    font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 28px;
+	color:darkgoldenrod;
+}
+.small { 
+	font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+    font-size: 14px;
+	color:grey;
+}
+.small-link:hover{
+	font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+    font-size: 14px;
+	color:grey;
+	text-decoration: underline;
+}
+.small-link{
+	font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+    font-size: 14px;
+	color:grey;
+}
+a{
+    text-decoration: none;
+}
+/*ol li:before {
+            content: counter(li) ".";
+            color: darkgoldenrod;
+        }
+ol li{
+	counter-increment: li;
+}*/

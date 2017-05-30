@@ -1,0 +1,10 @@
+<ol>
+  <li *ngFor="let comment of comments | paginate: {itemsPerPage: 10, currentPage:page, id: '1'}; let i = index" class="normal">{{ comment.text }}
+  <br/><span class="small"> by  {{ comment.by }} |  {{ item.time | date:'MMM dd hh:mm a' }} </span>
+  <br/><br/>
+  </li></ol>  
+ <pagination-controls (pageChange)="page = $event" id="1"
+                      maxSize="10"
+                      directionLinks="true"
+                      autoHide="true">
+                </pagination-controls>

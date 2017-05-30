@@ -1,0 +1,13 @@
+<ol>
+  <li *ngFor="let item of items| paginate: {itemsPerPage: 10, currentPage:page, id: '1'}; let i = index"><a href='{{ item.url }}' class="normal"> {{ item.title }}</a>
+  <span class="small"> by {{ item.by }} </span>
+  <br/>
+  <table><tr><td class="small"> {{ item.time | date:'MMM dd hh:mm a' }} | </td>
+  <td class="small">{{ item.score }} hits</td>
+  </tr></table><br/>
+  </li></ol>
+ <pagination-controls (pageChange)="page = $event" id="1"
+                      maxSize="10"
+                      directionLinks="true"
+                      autoHide="true">
+                </pagination-controls>
